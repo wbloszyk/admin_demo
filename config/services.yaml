@@ -30,7 +30,7 @@ services:
 
     App\Admin\CarAdmin:
         tags:
-            - { name: sonata.admin, manager_type: orm, group: 'Demo', label: 'Car'}
+            - { name: sonata.admin, manager_type: orm, group: 'Demo 2', label: 'Car'}
         arguments: [~, App\Entity\Car, ~]
         calls:
             - [setSubClasses, [renault : 'App\Entity\Renault',  citroen : 'App\Entity\Citroen', peugeot : 'App\Entity\Peugeot']]
