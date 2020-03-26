@@ -13,7 +13,9 @@ declare(strict_types=1);
 
 namespace App\Admin;
 
+use Knp\Menu\ItemInterface as MenuItemInterface;
 use Sonata\AdminBundle\Admin\AbstractAdmin;
+use Sonata\AdminBundle\Admin\AdminInterface;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Form\FormMapper;
@@ -74,5 +76,32 @@ final class ColorAdmin extends AbstractAdmin
             ->add('material', AdminType::class)
             ->add('enabled')
         ;
+    }
+
+    protected function configureSideMenu(MenuItemInterface $menu, $action, AdminInterface $childAdmin = null): void
+    {
+        if (!$childAdmin && !\in_array($action, ['edit'], true)) {
+            return;
+        }
+
+        $admin = $this->isChild() ? $this->getParent() : $this;
+
+        $id = $admin->getRequest()->get('id');
+        $product = $this->getObject($id);
+
+        $menu->addChild(
+            'Test',
+            ['uri' => '#']
+        );
+
+        $menu->addChild(
+            'Test 2',
+            ['uri' => '#']
+        );
+
+        $menu->addChild(
+            'Test 3',
+            ['uri' => '#']
+        );
     }
 }
