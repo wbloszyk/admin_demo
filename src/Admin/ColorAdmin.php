@@ -45,7 +45,7 @@ final class ColorAdmin extends AbstractAdmin
             ->addIdentifier('g')
             ->addIdentifier('b')
             ->add('material')
-            ->add('enabled')
+            ->add('enabled', null, ['editable' => true])
             ->add('_action', null, [
                 'actions' => [
                     'show' => [],
@@ -70,11 +70,23 @@ final class ColorAdmin extends AbstractAdmin
     protected function configureFormFields(FormMapper $formMapper): void
     {
         $formMapper
+            ->tab('Color tab')
+            ->with('Color R', ['class' => 'col-12'])
             ->add('r')
+            ->end()
+            ->with('Color G', ['class' => 'col-6'])
             ->add('g')
+            ->end()
+            ->with('Color B', ['class' => 'col-6'])
             ->add('b')
+            ->end()
+            ->end()
+            ->tab('Other tab')
+            ->with('Other pane')
             ->add('material', AdminType::class)
             ->add('enabled')
+            ->end()
+            ->end()
         ;
     }
 

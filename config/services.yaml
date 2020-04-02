@@ -28,13 +28,13 @@ services:
 
 
 
-    App\Admin\CarAdmin:
-        tags:
-            - { name: sonata.admin, manager_type: orm, group: 'Demo 2', label: 'Car'}
-        arguments: [~, App\Entity\Car, ~]
-        calls:
-            - [setSubClasses, [renault : 'App\Entity\Renault',  citroen : 'App\Entity\Citroen', peugeot : 'App\Entity\Peugeot']]
-            #- [addSubClass,[renault: [renault: 'App\Entity\Renault']]]
+    #App\Admin\CarAdmin:
+    #    tags:
+    #        - { name: sonata.admin, manager_type: orm, group: 'Demo 2', label: 'Car'}
+    #    arguments: [~, App\Entity\Car, ~]
+    #    calls:
+    #        - [setSubClasses, [renault : 'App\Entity\Renault',  citroen : 'App\Entity\Citroen', peugeot : 'App\Entity\Peugeot']]
+    #        #- [addSubClass,[renault: [renault: 'App\Entity\Renault']]]
 
     App\Admin\ColorAdmin:
         tags:
@@ -46,7 +46,7 @@ services:
 
     App\Admin\EngineAdmin:
         tags:
-            - { name: sonata.admin, manager_type: orm, group: 'Demo', label: 'Engine'}
+            - { name: sonata.admin, manager_type: orm, group: 'Demo 2', label: 'Engine'}
         arguments:
             - ~
             - App\Entity\Engine
