@@ -6,8 +6,13 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "sensio/framework-extra-bundle": "^5.1",
-        "sonata-project/admin-bundle": "dev-master",
+        "sonata-project/admin-bundle": "4.x-dev as 3.7",
+        "sonata-project/core-bundle": "3.x-dev as 3.19",
         "sonata-project/doctrine-orm-admin-bundle": "dev-master",
+        "sonata-project/form-extensions": "0.x-dev as 0.2",
+        "sonata-project/twig-extensions": "0.x-dev as 0.2",
+        "sonata-project/user-bundle": "^4.0",
+        "symfony/acl-bundle": "^2.0",
         "symfony/asset": "4.4.*",
         "symfony/console": "4.4.*",
         "symfony/dotenv": "4.4.*",
@@ -87,6 +92,22 @@
         {
             "type": "vcs",
             "url": "https://github.com/wbloszyk/SonataAdminBundle.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/wbloszyk/SonataCoreBundle.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/wbloszyk/SonataUserBundle.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/wbloszyk/form-extensions.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/wbloszyk/twig-extensions.git"
         }
     ]
 }

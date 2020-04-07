@@ -1,8 +1,8 @@
 sonata_admin:
     title: 'Sonata Admin'
-    title_logo: bundles/sonataadmin/logo_title_xl.png
+    title_logo: bundles/sonataadmin/logo_title.png
     options:
-        title_mode: single_image # One of "single_text"; "single_image"; "both"
+        title_mode: both # One of "single_text"; "single_image"; "both"
     dashboard:
         blocks:
             - { type: sonata.admin.block.admin_list, position: left }
