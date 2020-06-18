@@ -78,23 +78,65 @@
     "doctrine/reflection": {
         "version": "1.2.0"
     },
+    "doctrine/sql-formatter": {
+        "version": "1.x-dev"
+    },
     "egulias/email-validator": {
         "version": "2.1.17"
     },
     "friendsofsymfony/user-bundle": {
-        "version": "v2.1.2"
+        "version": "2.x-dev"
     },
-    "jdorn/sql-formatter": {
-        "version": "v1.2.17"
+    "hoa/compiler": {
+        "version": "3.x-dev"
+    },
+    "hoa/consistency": {
+        "version": "1.17.05.02"
+    },
+    "hoa/event": {
+        "version": "1.17.01.13"
+    },
+    "hoa/exception": {
+        "version": "1.17.01.16"
+    },
+    "hoa/file": {
+        "version": "1.17.07.11"
+    },
+    "hoa/iterator": {
+        "version": "2.17.01.10"
+    },
+    "hoa/math": {
+        "version": "1.x-dev"
+    },
+    "hoa/protocol": {
+        "version": "1.17.01.14"
+    },
+    "hoa/regex": {
+        "version": "1.17.01.13"
+    },
+    "hoa/stream": {
+        "version": "1.17.02.21"
+    },
+    "hoa/ustring": {
+        "version": "4.17.01.16"
+    },
+    "hoa/visitor": {
+        "version": "2.17.01.16"
+    },
+    "hoa/zformat": {
+        "version": "1.x-dev"
     },
     "jms/metadata": {
         "version": "2.1.0"
     },
+    "jms/serializer": {
+        "version": "3.6-dev"
+    },
     "knplabs/knp-menu": {
-        "version": "v3.1.0"
+        "version": "3.2-dev"
     },
     "knplabs/knp-menu-bundle": {
-        "version": "v3.0.0"
+        "version": "3.1.x-dev"
     },
     "laminas/laminas-code": {
         "version": "3.4.1"
@@ -154,12 +196,12 @@
         ]
     },
     "sonata-project/admin-bundle": {
-        "version": "3.31",
+        "version": "3.64",
         "recipe": {
             "repo": "github.com/symfony/recipes-contrib",
             "branch": "master",
-            "version": "3.31",
-            "ref": "0e5931df1732e3dccfba42a20853049e5e9db6ae"
+            "version": "3.64",
+            "ref": "e300c83e77d35a352b863a82c8d039f29f10fd62"
         },
         "files": [
             "config/packages/sonata_admin.yaml",
@@ -168,10 +210,10 @@
         ]
     },
     "sonata-project/block-bundle": {
-        "version": "4.2.0"
+        "version": "4.x-dev"
     },
     "sonata-project/cache": {
-        "version": "2.0.1"
+        "version": "2.x-dev"
     },
     "sonata-project/core-bundle": {
         "version": "3.9",
@@ -195,10 +237,10 @@
         "version": "4.x-dev"
     },
     "sonata-project/easy-extends-bundle": {
-        "version": "2.5.0"
+        "version": "2.x-dev"
     },
     "sonata-project/exporter": {
-        "version": "2.2.0"
+        "version": "2.x-dev"
     },
     "sonata-project/form-extensions": {
         "version": "1.2.0"
@@ -207,10 +249,10 @@
         "version": "1.2.0"
     },
     "sonata-project/user-bundle": {
-        "version": "4.2.3"
+        "version": "4.x-dev"
     },
     "swiftmailer/swiftmailer": {
-        "version": "v6.2.3"
+        "version": "6.3-dev"
     },
     "symfony/acl-bundle": {
         "version": "v2.0.0"
@@ -424,6 +466,9 @@
     "symfony/polyfill-php73": {
         "version": "v1.14.0"
     },
+    "symfony/polyfill-php80": {
+        "version": "1.17-dev"
+    },
     "symfony/process": {
         "version": "v4.4.5"
     },
@@ -490,7 +535,7 @@
         "version": "v4.4.5"
     },
     "symfony/templating": {
-        "version": "v4.4.7"
+        "version": "4.4.x-dev"
     },
     "symfony/test-pack": {
         "version": "v1.0.6"
